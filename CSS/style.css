@@ -1,0 +1,130 @@
+body{
+    background-color: rgba(25, 25, 25, 0.75);
+    width: 1440px;
+    margin-left: 100px;
+    margin-right: 100px;
+    }
+
+.navigation{
+    position: relative;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    left: 250px;
+    top: 100px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+nav{
+    width: 600px;
+    background-color: black;
+    color: #F1C232;
+    font-weight: 700;
+    display:inline-block
+
+}
+
+nav>div{
+    background-color: #191919;
+    padding: 10px;
+    display: inline-block;
+    border-bottom-color: #F1C232;
+    border-bottom-style: inset;
+    width: 100px;
+}
+
+.heroImg{
+    height: 500px;
+    width: 1400px;
+    padding: 20px;
+    background-color: black;
+    left: 30px;
+}
+.heroPic{
+    width: 500px;
+    height: 500px;
+    float: right;   
+}
+.content{
+    position: absolute;
+    width: 500px;
+    padding: 10px;
+    margin-top: 300px;
+    float: left;
+    color: white;
+    
+}
+button{
+    background-color: #F1C232;
+    color: #191919;
+    font-weight: 700;
+    width: 100px;
+    padding: 10px;
+}
+.heroPic>img{
+    height: 300px;
+    width: 300px;
+    float: right;
+}
+
+
+
+
+#redCard{
+    position: relative;
+    width: 675px;
+    height: 730px;
+    top: 500;
+    padding: 20px;
+    background-color: rgba(153, 0, 0, 0.85);
+    color: white;
+    float: left;
+}
+#yellowCard{
+    position: relative;
+    width: 675px;
+    height: 345px;
+    padding: 20px;
+    top: 500;
+    background-color: rgba(255, 201, 10, 0.85);
+    float: right;
+}
+#blueCard{
+    position: relative;
+    width: 675px;
+    height: 345px;
+    padding: 20px;
+    top: 500;
+    background-color: rgba(109, 158, 235, 0.9);
+    float: right;
+}
+
+.my-skills{
+    position: relative;
+    background-color: black; 
+    color: white;
+    top: 800px; 
+    height: 300px; 
+    padding: 20px;
+}
+
+footer{
+    position: relative;
+    background-color: black;
+    width: 1400px;
+    height: 200px;
+    padding: 20px;
+    top: 850px;
+    text-align: center;
+}
+.footer-nav{
+    position: absolute;
+    display: block;
+    width: 600px;
+
+   
+}
+
