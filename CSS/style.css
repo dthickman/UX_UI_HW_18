@@ -1,14 +1,14 @@
 body{
     background-color: rgba(25, 25, 25, 0.75);
     width: 1440px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: auto;
+    
     }
 
 .navigation{
     position: relative;
     background-color: black;
-    width: 100px;
+    width: 800px;
     height: 50px;
     left: 250px;
     top: 100px;
@@ -63,6 +63,7 @@ button{
     font-weight: 700;
     width: 100px;
     padding: 10px;
+    border: none;
 }
 .heroPic>img{
     height: 300px;
@@ -70,46 +71,103 @@ button{
     float: right;
 }
 
-
-
-
-#redCard{
-    position: relative;
-    width: 675px;
-    height: 730px;
-    top: 500;
-    padding: 20px;
-    background-color: rgba(153, 0, 0, 0.85);
+.myWork{
+    background-color: black;
     color: white;
-    float: left;
-}
-#yellowCard{
-    position: relative;
-    width: 675px;
-    height: 345px;
-    padding: 20px;
-    top: 500;
-    background-color: rgba(255, 201, 10, 0.85);
-    float: right;
-}
-#blueCard{
-    position: relative;
-    width: 675px;
-    height: 345px;
-    padding: 20px;
-    top: 500;
-    background-color: rgba(109, 158, 235, 0.9);
-    float: right;
+    font-family: sans-serif;
+    text-align: center;
 }
 
-.my-skills{
-    position: relative;
-    background-color: black; 
+h4{
     color: white;
-    top: 800px; 
-    height: 300px; 
-    padding: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 24px;
 }
+
+#case1{
+    grid-area: Case1;
+    background: linear-gradient(0deg, rgba(153, 0, 0, 0.85), rgba(153, 0, 0, 0.85)), #FFFFFF;
+    text-align: center;
+    line-height: 350px;
+
+}
+
+#case1>p{
+    line-height: 2;
+}
+#case2{
+    grid-area: Case2;
+    background: linear-gradient(0deg, rgba(255, 201, 10, 0.85), rgba(255, 201, 10, 0.85)), #FFFFFF;
+    text-align: center;
+    line-height: 100px;
+}
+#case2>p{
+    line-height: 2;
+    margin: 5px;
+}
+#case3{
+    grid-area: Case3;
+    background: linear-gradient(0deg, rgba(109, 158, 235, 0.9), rgba(109, 158, 235, 0.9)), #FFFFFF;
+    text-align: center;
+    line-height: 150px;
+}
+#case3>p{
+    line-height: 2;
+    margin: 5px;
+}
+.workGrid{
+    margin: 0px;
+    height: 800px;
+    background-color: black;
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 710px 50%;
+    grid-template-areas:
+     "Case1 Case2"
+     "Case1 Case2"
+     "Case1 Case3"
+     "Case1 Case3";
+}
+
+.caseStudy{
+    background-color: #191919;
+    color: #F1C232;
+}
+
+.mySkills{
+    background-color: black;
+    padding: 1%;
+}
+
+.mySkills>h1{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    height: 50px;
+    text-align: center;    
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 300px;
+}
+.flexContainer>div{
+    background-color: #191919;
+    color: #F1C232;
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom-color: #F1C232;
+    border-bottom-style: inset;
+}
+
 
 footer{
     position: relative;
@@ -117,14 +175,37 @@ footer{
     width: 1400px;
     height: 200px;
     padding: 20px;
-    top: 850px;
+    top: 25px;
     text-align: center;
 }
 .footer-nav{
     position: absolute;
     display: block;
     width: 600px;
+    top: 50%;
+    left: 30%;
 
    
 }
-
+@media only screen and (max-width: 600px) {
+    .workGrid {
+        width: 100%;
+        justify-content: start;
+        align-content: space-between;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas: 
+            "Case1"
+            "Case2"
+            "Case3";
+    }
+   
+    .flexContainer{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .flexContainer>div{
+        width: 100%;
+    }
+}
