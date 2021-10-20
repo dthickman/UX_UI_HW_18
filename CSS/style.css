@@ -208,6 +208,16 @@ footer{
             "Case2"
             "Case3";
     }
+    #case1{
+        grid-area: Case1;
+        background: linear-gradient(0deg, rgba(153, 0, 0, 0.85), rgba(153, 0, 0, 0.85)), #FFFFFF;
+        text-align: center;
+        line-height: 5;
+    
+    }
+    #case1>p{
+        line-height: 1;
+    }
     .flexContainer{
         flex-direction: column;
         width: 100%;   
