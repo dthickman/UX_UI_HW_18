@@ -2,16 +2,18 @@ body{
     background-color: rgba(25, 25, 25, 0.75);
     width: 1440px;
     margin: auto;
-    
     }
-
-.navigation{
-    position: relative;
+header{
+    position: absolute;
     background-color: black;
     width: 800px;
     height: 50px;
-    left: 250px;
-    top: 100px;
+    margin: auto;
+}
+
+.navigation{
+    position: relative;
+    
 }
 
 .inline-block{
@@ -23,8 +25,7 @@ nav{
     background-color: black;
     color: #F1C232;
     font-weight: 700;
-    display:inline-block
-
+    display: inline-block;
 }
 
 nav>div{
@@ -187,25 +188,41 @@ footer{
 
    
 }
+/* media query*/
 @media only screen and (max-width: 600px) {
+    body{
+        width: 600px;
+        margin: 1% auto;
+    }
+   
     .workGrid {
-        width: 100%;
+        display: grid;
+        width: 600px;
+        height: 1200px;
         justify-content: start;
         align-content: space-between;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 200px 200px;
+        grid-template-rows: 400px 400px 400px;
         grid-template-areas: 
             "Case1"
             "Case2"
             "Case3";
     }
-   
     .flexContainer{
         flex-direction: column;
-        width: 100%;
-        
+        width: 100%;   
+        height: 600px; 
     }
     .flexContainer>div{
-        width: 100%;
+        background-color: #191919;
+        color: #F1C232;
+        width: 90%;
+        margin: 1% auto;
+        padding: 1%;
+        justify-content: space-between;
+        text-align: center;
+        border-bottom-color: #F1C232;
+        border-bottom-style: inset;
     }
+   
 }
